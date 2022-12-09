@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="koala.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Composers 101</title>
+    <link rel="icon" type="image/x-icon" href="assets/realmoji.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,600;0,700;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class = "top">
+        <ul class="nav">
+          <li class="navbar-brand">
+            <a class="nav-link" aria-current="page" href="index.html" style = "font-size: 32px; color:black; padding-left: 0;">Sean Yu</a>
+          </li>
+          <div class = "nav-right">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html" style = "font-size: 28px; color:rgb(0, 0, 0); ">About</a>
+            </li>
+          </div>
+        </ul>
+    </div>
+    <div style = "display: flex; justify-content: center;">
+        <div class = "middle">
+            <a id = "start"><h1 style = "font-weight: 400; font-size: 64px;">Composers 101</h1></a>
+            <p>
+                An app that introduces classical music newbies to popular classical 
+                composers in each time period.
+            </p>
+            <img src = "development-assets/data.png" style = "width: 100%;">
+            <figcaption>Classical music accounted for only 1% of the music consumption in 2019 (The Nielsen Company).</figcaption>
+            <!-- https://static.billboard.com/files/pdfs/NIELSEN_2019_YEARENDreportUS.pdf -->
+            <br></br>
+            <h2 style = "font-weight: 300; font-size: 48px;">Context</h2>
+            <p>
+                While some may deem it an archaic art form, classical music is the predecessor
+                to all modern music forms. For more than a century, however, classical music has been on 
+                the decline, with about 1% of all music consumption in 2019 being classical music. As a 
+                cellist and classical musician, it is my mission to maintain and revive people's 
+                passion for classical music.
+                <br></br>
+                As such, I created Composers 101 to inform and teach new classical music listeners about
+                popular classical composers. Its goal is to provide new listeners with the foundations and basics necessary to 
+                continue to explore classical music. 
+            </p>
+            <br></br>
+            <h2 style = "font-weight: 300; font-size: 48px;">Research</h2>
+            <!--  What precedent work is out there? Who is our audience? What do they want/think?  -->
+            <p>
+                In starting this project, I initially considered that my primary audience 
+                would be new listeners to classical music. This led me to consider that 
+                the information that my users would be looking for would most likely be 
+                more general facts about composers in general, rather than long and dense biographies
+                about specific niche composers. 
+                <br></br>
+                And upon doing a brief search, I found that there was a lack of simple 
+                applications that aimed to introduce users to a wider breadth of composers. Existing 
+                applications had very dense information that wasn't very beginner-friendly, so I sought
+                to fill this gap. 
+            </p>
+            <br></br>
+            
+            <h2 style = "font-weight: 300; font-size: 48px;">Design Choices</h2>
+            <p>
+               This is an initial low-fi mockup of the final product: 
+            </p>
+            <div style = "align-self: center;">
+                <img src = "development-assets/Screen Shot 2022-12-08 at 11.05.32 PM.png" style = "width: 100%;"
+               >
+               <!-- style = "width: 18rem;" -->
+                <figcaption>Composers 101 mockup</figcaption>
+            </div>
+            <br/>
+            <p>
+                In choosing this design, I knew that I wanted users to be familiar with the 
+                faces of the composers being presented; faces leave a deeper impression on the user 
+                and allow users to make a mental connection between an image and its corresponding information.
+               
+                <br></br>
+                In arranging the photos of the composers, I organized it a little like how an opping shopping gallery
+                would look like. The rationale behind this: users spend a lot of time browing online stores, so modelling my application
+                after such a layout might trigger an unconscious habbit to spend more time on composers 101. 
+                <br></br>
+                Other specific stylistic choices include making the the aggregator on the left sticky so that users could see who 
+                their favorites were at all time and making filter and sort buttons located in an a location analogous to that of online stores.
+                And after taking these factors into consideration, this is what the final product looked like: 
+                <br/>
+                
+            </p>
+            <div  style = "align-self: center;">
+                <a href = "https://crazyrhino1300.github.io/try2/">
+                    <img class = "development-image" src = "development-assets/Screen Shot 2022-12-08 at 11.41.54 PM.png" style = "width: 100%; border: 1px solid black; border-radius: 15px;"
+                    >
+                </a>
+                
+               <!-- style = "width: 18rem;" -->
+                <figcaption>Composers 101 landing page (click to access)</figcaption>
+            </div>
+
+            <br/>
+            <p>
+                A feature that I implemented after doing my low-fi mockup was offcanvases for composers information.
+                Initially, I wasn't sure how to best convey general information about composers, but something that was easily
+                accessible, but also cancelable, was most desireable. Offcanvases fit that profile. 
+            </p>
+
+            <br></br>
+
+            <h2 style = "font-weight: 300; font-size: 48px;">Conclusions</h2>
+            <p>
+                This project gave me a lot of insight into working with React and APIs. I learned how to 
+                integrate JS code with user states and queries, and these gave me the ability to make a much 
+                more interactive application as a whole. For APIs, I used OpenOpus to source all of the foundational 
+                information upon which I built my data, and working with this API gave me a lot of insight into how to 
+                pull information from large collections of data. 
+                <br></br>
+                If I were to do things differently, I would want to include a more diverse selection of 
+                composers to include composers who come from underrepresented backgrounds. In addition, I would
+                change my aggregator display to disallow duplicate composers. Overall, however, this project was very 
+                enjoyable to work on since this is a cause that I am so deeply passionate about. 
+            </p>
+            
+        </div>
+    </div>
+    <div style = "display: flex; width: 100%; justify-content: center; padding-top: 5rem;">
+        <a href = "#start">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16"
+          style = "fill:black">
+              <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+              <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </a>
+  </div>
+    <div class = "footer" >
+        <div style = "display: flex;">
+            <!-- dummy -->
+            <a style = "text-decoration: none;" href = "china-taste.html">
+                <p style = "color: black;">←<i>see previous project: China Taste</i></p>
+            </a>
+            
+        </div>
+        <div style = "display: flex;">
+            <a style = "text-decoration: none;" href = "personas.html">
+                <p style = "color: black;"><i>see next project: Personas</i> →</p>
+            </a>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
